@@ -1,0 +1,31 @@
+{
+  "name": "web-chat",
+  "version": "1.0.0",
+  "description": "A real-time web chat",
+  "main": "server.js",
+  "engines": {
+    "node": "12.16.1"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "Ariel Evaldt Schmitt",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "celebrate": "^12.1.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.15",
+    "mysql2": "^2.1.0",
+    "pg": "^8.0.3",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
