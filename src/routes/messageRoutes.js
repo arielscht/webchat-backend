@@ -11,5 +11,9 @@ router.get('/receive', isAuth, messageController.getMessages);
 
 router.get('/recent', isAuth, messageController.lastMessages);
 
+router.put('/read', isAuth, messageController.updateRead);
+
+router.get('/unread', isAuth, messageController.getUnreadMessages);
+
 
 module.exports = router;
