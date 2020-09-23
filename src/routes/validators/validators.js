@@ -12,7 +12,7 @@ exports.signupVal =
 exports.loginVal = 
     celebrate({
         [Segments.BODY]: Joi.object().keys({
-            username: Joi.string().pattern(/^[a-zA-z0-9._-]+$/).min(5).required(),
+            username: Joi.string().pattern(/^[a-zA-z0-9._-]+$/).message('O nome de usuário deve conter apenas letras e números').min(5).required(),
             password: Joi.string().min(8).required()
         })
     });

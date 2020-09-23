@@ -33,7 +33,7 @@ app.use(errors());
 app.use((error, req, res, next) => {
     const status = error.statusCode || 500;
     console.log(error);
-    res.status(status).send(error.message);
+    res.status(status).send({message: error.message});
 })
 
 
